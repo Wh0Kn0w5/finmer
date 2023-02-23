@@ -2597,6 +2597,13 @@
 																																			"IsRaw": false
 																																		}
 																																	]
+																																},
+																																{
+																																	"!Type": "CommandVarSetNumber",
+																																	"VariableName": "CHIPAV",
+																																	"ValueOperation": "Add",
+																																	"OperandMode": "Literal",
+																																	"OperandLiteral": 1.0
 																																}
 																															]
 																														},
@@ -2737,6 +2744,25 @@
 										"Children": [
 											{
 												"NodeType": "State",
+												"Key": "Chip_R_OV_WRC",
+												"ScriptAppear": {
+													"!Type": "ScriptDataVisualCondition",
+													"Mode": "All",
+													"Operand": true,
+													"Tests": [
+														{
+															"!Type": "ConditionVarNumber",
+															"VariableName": "CHIPOV",
+															"Operator": "GreaterOrEqual",
+															"OperandMode": "Literal",
+															"OperandLiteral": 5.0
+														}
+													]
+												},
+												"Children": []
+											},
+											{
+												"NodeType": "State",
 												"Key": "Chip_R_OV02",
 												"ScriptAction": {
 													"!Type": "ScriptDataVisualAction",
@@ -2846,6 +2872,13 @@
 																															"IsRaw": false
 																														}
 																													]
+																												},
+																												{
+																													"!Type": "CommandVarSetNumber",
+																													"VariableName": "CHIPOV",
+																													"ValueOperation": "Add",
+																													"OperandMode": "Literal",
+																													"OperandLiteral": 1.0
 																												}
 																											]
 																										},
