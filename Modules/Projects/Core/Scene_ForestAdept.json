@@ -2744,7 +2744,17 @@
 										"Children": [
 											{
 												"NodeType": "State",
-												"Key": "Chip_R_OV_WRC",
+												"Key": "Chip_R_OV2_WRC",
+												"ScriptAction": {
+													"!Type": "ScriptDataVisualAction",
+													"Nodes": [
+														{
+															"!Type": "CommandLog",
+															"Text": "CHIP_OV2_WRC",
+															"IsRaw": false
+														}
+													]
+												},
 												"ScriptAppear": {
 													"!Type": "ScriptDataVisualCondition",
 													"Mode": "All",
@@ -2759,7 +2769,55 @@
 														}
 													]
 												},
-												"Children": []
+												"Children": [
+													{
+														"NodeType": "Choice",
+														"Key": "Chip_C_OV3_WRC",
+														"Highlight": false,
+														"ButtonWidth": 1.0,
+														"Children": [
+															{
+																"NodeType": "State",
+																"Key": "Chip_R_OV3_WRC",
+																"ScriptAction": {
+																	"!Type": "ScriptDataVisualAction",
+																	"Nodes": [
+																		{
+																			"!Type": "CommandLog",
+																			"Text": "CHIP_OV3_WRC",
+																			"IsRaw": false
+																		}
+																	]
+																},
+																"Children": [
+																	{
+																		"NodeType": "Choice",
+																		"Key": "Chip_C_OV4_WRC",
+																		"Highlight": false,
+																		"ButtonWidth": 1.0,
+																		"Children": [
+																			{
+																				"NodeType": "State",
+																				"Key": "Chip_R_OV4_WRC",
+																				"ScriptAction": {
+																					"!Type": "ScriptDataVisualAction",
+																					"Nodes": [
+																						{
+																							"!Type": "CommandLog",
+																							"Text": "CHIP_OV4_WRC",
+																							"IsRaw": false
+																						}
+																					]
+																				},
+																				"Children": []
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													}
+												]
 											},
 											{
 												"NodeType": "State",

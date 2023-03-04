@@ -2,5 +2,54 @@
 	"!Type": "AssetStringTable",
 	"AssetID": "7791e6e3-b992-4d7f-b4b8-feaf00e6127f",
 	"AssetName": "Strings_WRC",
-	"Entries": []
+	"Entries": [
+		{
+			"Key": "CHIP_OV2_WRC",
+			"Text": [
+				"Chip huffs before standing quickly. Description about colossal size"
+			]
+		},
+		{
+			"Key": "CHIP_OV3_WRC",
+			"Text": [
+				"Eyes linger to Chip's growing erection, remark about size of member"
+			]
+		},
+		{
+			"Key": "CHIP_OV4_WRC",
+			"Text": [
+				"Snack opts to run, but Chip pins them down before jaws descend on them"
+			]
+		},
+		{
+			"Key": "CHIP_OV5_WRC",
+			"Text": [
+				"Tongue wraps around snack, sending them up into throat, pushed towards stomach"
+			]
+		},
+		{
+			"Key": "CHIP_OV6_SAFE_WRC",
+			"Text": [
+				"Pushed into stomach. Description of the stomach more clean to show safety"
+			]
+		},
+		{
+			"Key": "CHIP_OV6_WRC",
+			"Text": [
+				"Pushed into stomach. Description of the previous meal to show stomach at work"
+			]
+		},
+		{
+			"Key": "CHIP_OV7_SAFE_WRC",
+			"Text": [
+				"Stomach violently shakes in rhythmic actions, determine Chip is humping them in belly"
+			]
+		},
+		{
+			"Key": "CHIP_OV7_WRC",
+			"Text": [
+				"Stomach violently shakes in rhythmic actions, determine Chip is humping them in belly"
+			]
+		}
+	]
 }
