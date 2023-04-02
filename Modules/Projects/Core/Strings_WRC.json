@@ -6,13 +6,13 @@
 		{
 			"Key": "CHIP_OV2_WRC",
 			"Text": [
-				"Chip huffs before standing quickly. Description about colossal size"
+				"Your paws press into the wolf's soft belly, the full and fluffy fur coat quite pleasant to the touch. Chip suddenly huffs, rolling alongside his back out of your reach before just as quickly rising tall upon his own four legs. Even if you have experienced the raw magnitude of Chip's size a couple times before, it is still astounding how any creature could grow this big, Rux's magic notwithstanding. With another exuberant snort, the wolf turns to face you, his yellow eyes piercing through the air into you. "
 			]
 		},
 		{
 			"Key": "CHIP_OV3_WRC",
 			"Text": [
-				"Eyes linger to Chip's growing erection, remark about size of member"
+				"But, more attention-grabbing is the gradual reveal of a slick, pink rod emerging from beneath Chip's legs. You've already known that the wolf was a male, and the occasional errant thought of pitying the creature for a lack of suitable mate did cross your mind from time to time. However, it's clear as day right now that Chip has been getting aroused by your constant travels through him, and there's nobody else but you currently here. Chip stares you down, saliva oozing from his panting chops…"
 			]
 		},
 		{
@@ -49,6 +49,18 @@
 			"Key": "CHIP_OV7_WRC",
 			"Text": [
 				"Stomach violently shakes in rhythmic actions, determine Chip is humping them in belly"
+			]
+		},
+		{
+			"Key": "RUX_FEED",
+			"Text": [
+				"The red panda shifts in his chair. \"Hmm… I think the big boy is due for another meal. Here, let me grab some kibble for him.\" Rux quickly disappears back into the kitchen, keeping out of sight for quite some time. In short order, however, he's back in the main living room, another container of Chip kibble waiting to be served. \"I believe this bears repeating, but do not get too close to the wolf as he eats. Chip tends to get a bit… possessive of his food and could likely add you to it.\" "
+			]
+		},
+		{
+			"Key": "WRC_CHIP_FEED",
+			"Text": [
+				"Suddenly, Chip perks his head up, nose pointed skyward. His eyes close as he concentrates on finding the peculiar scent that has caught his attention. His yellow gaze reopens, before focusing on you, or in particular the container of kibble you possess. You watch as the wolf quickly stands on all fours, before walking to your position. While normally intimidating in stature, you're caught off guard when he lowers his head onto his outstretched front legs, mimicking a needy puppy. You note how his tail is wagging in a manner unbecoming of his smaller wolfen ancestors."
 			]
 		}
 	]

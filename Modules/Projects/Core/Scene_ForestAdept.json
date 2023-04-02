@@ -2039,6 +2039,63 @@
 												"LinkTarget": "Talk_R_Rux_Root"
 											}
 										]
+									},
+									{
+										"NodeType": "Choice",
+										"Key": "Talk_C_Rux_Chip_Feed",
+										"Title": "Food for Chip",
+										"Tooltip": "Ask him if Chip needs to eat.",
+										"Highlight": false,
+										"ButtonWidth": 1.0,
+										"ScriptAction": {
+											"!Type": "ScriptDataVisualAction",
+											"Nodes": [
+												{
+													"!Type": "CommandVarSetFlag",
+													"VariableName": "WRC_RUX_FED",
+													"OperandMode": "Literal",
+													"OperandLiteral": true
+												},
+												{
+													"!Type": "CommandLog",
+													"Text": "RUX_FEED",
+													"IsRaw": false
+												},
+												{
+													"!Type": "CommandPlayerSetItem",
+													"ItemGuid": "737d57fd-b777-4adf-a2e6-e9f49ae54ab9",
+													"Add": true,
+													"Quiet": false
+												}
+											]
+										},
+										"ScriptAppear": {
+											"!Type": "ScriptDataVisualCondition",
+											"Mode": "All",
+											"Operand": true,
+											"Tests": [
+												{
+													"!Type": "ConditionVarFlag",
+													"VariableName": "FOREST_DIREWOLF_DEAD",
+													"OperandMode": "Literal",
+													"OperandLiteral": false
+												},
+												{
+													"!Type": "ConditionVarNumber",
+													"VariableName": "MQ04_CHIP_LAST_ATE",
+													"Operator": "NotEqual",
+													"OperandMode": "Variable",
+													"OperandText": "GETTIMEHOURTOTAL()"
+												},
+												{
+													"!Type": "ConditionVarFlag",
+													"VariableName": "WRC_RUX_FED",
+													"OperandMode": "Literal",
+													"OperandLiteral": false
+												}
+											]
+										},
+										"Children": []
 									}
 								]
 							}
@@ -2793,8 +2850,19 @@
 																	{
 																		"NodeType": "Choice",
 																		"Key": "Chip_C_OV4_WRC",
+																		"Title": "Run!",
+																		"Tooltip": "Uh oh...",
 																		"Highlight": false,
 																		"ButtonWidth": 1.0,
+																		"ScriptAction": {
+																			"!Type": "ScriptDataVisualAction",
+																			"Nodes": [
+																				{
+																					"!Type": "CommandComment",
+																					"Comment": "This will have a tie in to CV once I get the proper fatality setup."
+																				}
+																			]
+																		},
 																		"Children": [
 																			{
 																				"NodeType": "State",
@@ -2970,6 +3038,58 @@
 									{
 										"NodeType": "Link",
 										"LinkTarget": "Chip_C_Leave"
+									}
+								]
+							}
+						]
+					},
+					{
+						"NodeType": "Choice",
+						"Key": "Chip_C_FatalToggle",
+						"Title": "Feeding Time!",
+						"Tooltip": "Who's a hungry pup? Yes you are!",
+						"Highlight": false,
+						"ButtonWidth": 1.0,
+						"ScriptAppear": {
+							"!Type": "ScriptDataVisualCondition",
+							"Mode": "All",
+							"Operand": true,
+							"Tests": [
+								{
+									"!Type": "ConditionPlayerHasItem",
+									"ItemGuid": "737d57fd-b777-4adf-a2e6-e9f49ae54ab9"
+								}
+							]
+						},
+						"Children": [
+							{
+								"NodeType": "State",
+								"Key": "Chip_R_FatalToggle",
+								"ScriptAction": {
+									"!Type": "ScriptDataVisualAction",
+									"Nodes": [
+										{
+											"!Type": "CommandLog",
+											"Text": "WRC_CHIP_FEED",
+											"IsRaw": false
+										},
+										{
+											"!Type": "CommandPlayerSetItem",
+											"ItemGuid": "737d57fd-b777-4adf-a2e6-e9f49ae54ab9",
+											"Add": false
+										},
+										{
+											"!Type": "CommandVarSetFlag",
+											"VariableName": "WRC_RUX_FED",
+											"OperandMode": "Literal",
+											"OperandLiteral": false
+										}
+									]
+								},
+								"Children": [
+									{
+										"NodeType": "Link",
+										"LinkTarget": "MQ04_C_Chip_Feed2"
 									}
 								]
 							}

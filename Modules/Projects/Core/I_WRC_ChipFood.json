@@ -1,0 +1,11 @@
+﻿{
+	"!Type": "AssetItem",
+	"AssetID": "737d57fd-b777-4adf-a2e6-e9f49ae54ab9",
+	"AssetName": "I_WRC_ChipFood",
+	"ObjectName": "Chip's Kibble",
+	"ObjectAlias": "Chip Food",
+	"FlavorText": "A leather-bound container, filled to the brim with kibble. You down know how a big beast like Chip can be sated with a meager meal, but hey, he looks no worse for wear with it.",
+	"ItemType": "Generic",
+	"PurchaseValue": 3,
+	"IsQuestItem": true
+}
