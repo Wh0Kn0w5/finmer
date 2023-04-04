@@ -6,8 +6,9 @@ SetInventoryEnabled(false)
 -- the area. Instead, to make sure enter text only shown once, we do that here.
 if Storage.GetFlag("FOREST_ADEPT_FIRST") then
     Log("MQ04_ADEPT_ENTER01")
-
+    Storage.SetFlag("CHIP_CVFATAL", false)
     if not Storage.GetFlag("FOREST_DIREWOLF_DEAD") then
         Log("MQ04_ADEPT_ENTER_CHIP")
     end
 end
+

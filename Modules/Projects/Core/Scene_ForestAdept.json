@@ -1297,6 +1297,13 @@
 																			"ValueOperation": "Set",
 																			"OperandMode": "Script",
 																			"OperandText": "GetTimeHourTotal()"
+																		},
+																		{
+																			"!Type": "CommandVarSetNumber",
+																			"VariableName": "WRC_CHIP_CVRELEASE",
+																			"ValueOperation": "Set",
+																			"OperandMode": "Script",
+																			"OperandText": "GetTimeHourTotal()-4"
 																		}
 																	]
 																},
@@ -2703,6 +2710,126 @@
 							},
 							{
 								"NodeType": "State",
+								"Key": "Chip_Endo_CVToggle",
+								"ScriptAction": {
+									"!Type": "ScriptDataInline",
+									"Script": "local fight = Combat2()\r\nlocal good_boye = Creature(\"CR_MQ04_Chip\")\r\ngood_boye.PredatorDigests = false\r\nfight:AddParticipant(Player)\r\nfight:AddParticipant(good_boye)\r\nfight:SetVored(good_boye, Player)\r\nfight:OnRoundEnd(function(round)\r\n    Log(\"WRC_CHIP_ENDO\" .. tostring(round))\r\n    AdvanceTime(1)\r\n    if round >= 3 then \r\n        AdvanceTime(3)\r\n        fight:End() \r\n        Storage.SetFlag(\"CHIP_CVFATAL\", true)\r\n    end\r\nend)\r\nfight:Begin()"
+								},
+								"ScriptAppear": {
+									"!Type": "ScriptDataVisualCondition",
+									"Mode": "All",
+									"Operand": true,
+									"Tests": [
+										{
+											"!Type": "ConditionVarFlag",
+											"VariableName": "CHIP_CVFATAL",
+											"OperandMode": "Literal",
+											"OperandLiteral": false
+										}
+									]
+								},
+								"Children": [
+									{
+										"NodeType": "Choice",
+										"Key": "Chip_C_Endo4_WRC",
+										"Highlight": false,
+										"ButtonWidth": 1.0,
+										"Children": [
+											{
+												"NodeType": "State",
+												"Key": "Chip_R_Endo4_WRC",
+												"ScriptAction": {
+													"!Type": "ScriptDataVisualAction",
+													"Nodes": [
+														{
+															"!Type": "CommandLogSplit"
+														},
+														{
+															"!Type": "CommandLog",
+															"Text": "WRC_CHIP_ENDO4",
+															"IsRaw": false
+														}
+													]
+												},
+												"Children": [
+													{
+														"NodeType": "Choice",
+														"Key": "Chip_C_Endo5_WRC",
+														"Highlight": false,
+														"ButtonWidth": 1.0,
+														"Children": [
+															{
+																"NodeType": "State",
+																"Key": "Chip_R_Endo5_WRC",
+																"ScriptAction": {
+																	"!Type": "ScriptDataVisualAction",
+																	"Nodes": [
+																		{
+																			"!Type": "CommandLog",
+																			"Text": "WRC_CHIP_ENDO5",
+																			"IsRaw": false
+																		}
+																	]
+																},
+																"Children": [
+																	{
+																		"NodeType": "Choice",
+																		"Key": "Chip_C_Endo6_WRC",
+																		"Highlight": false,
+																		"ButtonWidth": 1.0,
+																		"Children": [
+																			{
+																				"NodeType": "State",
+																				"Key": "Chip_R_Endo6_WRC",
+																				"ScriptAction": {
+																					"!Type": "ScriptDataVisualAction",
+																					"Nodes": [
+																						{
+																							"!Type": "CommandLog",
+																							"Text": "WRC_CHIP_ENDO6",
+																							"IsRaw": false
+																						}
+																					]
+																				},
+																				"Children": [
+																					{
+																						"NodeType": "Choice",
+																						"Key": "Chip_C_Endo7_WRC",
+																						"Highlight": false,
+																						"ButtonWidth": 1.0,
+																						"ScriptAction": {
+																							"!Type": "ScriptDataVisualAction",
+																							"Nodes": [
+																								{
+																									"!Type": "CommandLog",
+																									"Text": "WRC_CHIP_ENDO7",
+																									"IsRaw": false
+																								}
+																							]
+																						},
+																						"Children": [
+																							{
+																								"NodeType": "Link",
+																								"LinkTarget": "Entry_R_Main"
+																							}
+																						]
+																					}
+																				]
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"NodeType": "State",
 								"Key": "Chip_Fatal_Vore",
 								"ScriptAction": {
 									"!Type": "ScriptDataInline",
@@ -2877,7 +3004,90 @@
 																						}
 																					]
 																				},
-																				"Children": []
+																				"Children": [
+																					{
+																						"NodeType": "Choice",
+																						"Key": "Chip_R_OV5_WRC",
+																						"Highlight": false,
+																						"ButtonWidth": 1.0,
+																						"Children": [
+																							{
+																								"NodeType": "State",
+																								"Key": "Chip_C_OV5_WRC",
+																								"ScriptAction": {
+																									"!Type": "ScriptDataVisualAction",
+																									"Nodes": [
+																										{
+																											"!Type": "CommandLog",
+																											"Text": "CHIP_OV5_WRC",
+																											"IsRaw": false
+																										}
+																									]
+																								},
+																								"Children": [
+																									{
+																										"NodeType": "Choice",
+																										"Key": "Chip_R_OV6_WRC",
+																										"Highlight": false,
+																										"ButtonWidth": 1.0,
+																										"ScriptAction": {
+																											"!Type": "ScriptDataVisualAction",
+																											"Nodes": [
+																												{
+																													"!Type": "CommandVarSetNumber",
+																													"VariableName": "CHIPOV",
+																													"ValueOperation": "Add",
+																													"OperandMode": "Literal",
+																													"OperandLiteral": 1.0
+																												},
+																												{
+																													"!Type": "CommandIf",
+																													"Mode": "All",
+																													"Operand": true,
+																													"Tests": [
+																														{
+																															"!Type": "ConditionInlineSnippet",
+																															"Snippet": "IsChipVoreFatal()"
+																														}
+																													],
+																													"HasElseBranch": true,
+																													"MainSubgroup": [
+																														{
+																															"!Type": "CommandLog",
+																															"Text": "CHIP_OV6_WRC",
+																															"IsRaw": false
+																														}
+																													],
+																													"ElseSubgroup": [
+																														{
+																															"!Type": "CommandLog",
+																															"Text": "CHIP_OV6_SAFE_WRC",
+																															"IsRaw": false
+																														}
+																													]
+																												}
+																											]
+																										},
+																										"Children": [
+																											{
+																												"NodeType": "Link",
+																												"LinkTarget": "Chip_Endo_CVToggle"
+																											},
+																											{
+																												"NodeType": "Link",
+																												"LinkTarget": "Chip_Fatal_Vore"
+																											},
+																											{
+																												"NodeType": "Link",
+																												"LinkTarget": "Chip_Endo_Vore"
+																											}
+																										]
+																									}
+																								]
+																							}
+																						]
+																					}
+																				]
 																			}
 																		]
 																	}

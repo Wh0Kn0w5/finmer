@@ -18,43 +18,73 @@
 		{
 			"Key": "CHIP_OV4_WRC",
 			"Text": [
-				"Snack opts to run, but Chip pins them down before jaws descend on them"
+				"Having your self-preservation instinct take full throttle, you quickly turn tail and run away. The ground quakes beneath you as the lumbering titan chases after, easily gaining distance. You cannot even call out for help before a colossal paw knocks against your back, sending you flying into the ground. Before you can even hope to get back up, the weight of wolf is pressed down upon you. It's not enough to break you in half, but you're not going to squeeze your way out of here. Bits of dribble coat the back of your head, and with terror dashing down your spine, you look up to see the slavering jaws of Chip staring back at you. Hot wolf-breath ushers his snake-like tongue towards your face, and in your prone state, renders you helpless to avoid becoming the next snack for the guard beast."
 			]
 		},
 		{
 			"Key": "CHIP_OV5_WRC",
 			"Text": [
-				"Tongue wraps around snack, sending them up into throat, pushed towards stomach"
+				"The slimy appendage wastes no time in wrapping around your head and arms, pulling tight to lock you in place. Your vision darkens as Chip releases his weight upon your back, but it comes as cold comfort as the tickle of his teeth on your {player.fur} clues you in on his jaws gently closing in on you. You're suddenly hoisted skyward, legs left dangling haphazardly outside the canid lips, which bend and roll to usher you in slowly. The resounding echo of Chip's deep breaths roar throughout his maw, even through the tongue you can hear the delighted canine happily pant as you're shunted towards the throat. It's a trip you've done several times before, but the throat walls are still skin-tight upon you. I spite of the salivatory lubricant the wolf has generously provided you, you are still forced to hold your breath as you begin yet another descent into Chip's belly."
 			]
 		},
 		{
 			"Key": "CHIP_OV6_SAFE_WRC",
 			"Text": [
-				"Pushed into stomach. Description of the stomach more clean to show safety"
+				"Your face is reacquainted with Chip's stomach sphincter once again. The process of being forced through it isn't any less difficult, but eventually you manage to slip through and into the hot, sticky sludge that you are quite familiar with now. The stomach appears free of any foodstuffs, other than you of course, but the stomach walls still secrete their slimy compound that leaves you fully coated. The stomach still clamps down upon you though, kneading you into a heap of {player.fur} before the tension finally relaxes. It's not a whole lot of space to move, but still better than when you first came down, might as well get yourself comfortable somewhat."
 			]
 		},
 		{
 			"Key": "CHIP_OV6_WRC",
 			"Text": [
-				"Pushed into stomach. Description of the previous meal to show stomach at work"
-			]
-		},
-		{
-			"Key": "CHIP_OV7_SAFE_WRC",
-			"Text": [
-				"Stomach violently shakes in rhythmic actions, determine Chip is humping them in belly"
-			]
-		},
-		{
-			"Key": "CHIP_OV7_WRC",
-			"Text": [
-				"Stomach violently shakes in rhythmic actions, determine Chip is humping them in belly"
+				"Your face is reacquainted with Chip's stomach sphincter once again. The process of being forced through it isn't any less difficult, but eventually you manage to slip through and into the hot, sticky sludge that you are quite familiar with now. Half-digested foodstuffs are first to greet you as you settle into the stomach. You hadn't given much time after feeding Chip again, and his stomach is currently in the process of churning through his most recent meal. You try not to focus too much on the chyme sifting through your {player.fur}, but the rhythmic contractions of the stomach do little else but fully coat you in this acidic medley."
 			]
 		},
 		{
 			"Key": "RUX_FEED",
 			"Text": [
 				"The red panda shifts in his chair. \"Hmm… I think the big boy is due for another meal. Here, let me grab some kibble for him.\" Rux quickly disappears back into the kitchen, keeping out of sight for quite some time. In short order, however, he's back in the main living room, another container of Chip kibble waiting to be served. \"I believe this bears repeating, but do not get too close to the wolf as he eats. Chip tends to get a bit… possessive of his food and could likely add you to it.\" "
+			]
+		},
+		{
+			"Key": "WRC_CHIP_ENDO1",
+			"Text": [
+				"You suppose that the hammock-like embrace of Chip's soft stomach walls is the only real reason you're even remotely comfortable in here. However, you might as well begin hanging artwork inside with how frequently you find yourself visiting. The ever-so-subtle swaying of the presently inert stomach shifts the center of gravity as you feel Chip begin walking somewhere."
+			]
+		},
+		{
+			"Key": "WRC_CHIP_ENDO2",
+			"Text": [
+				"Your belly lullaby comes to an unexpected stop, however. The background music of the dire wolf's heartbeat hastens its rhythm. You fully expect the stomach to kick into overdrive suddenly, but the sluicing of fluids maintains its output. What you don't expect is the sudden stiffness at the back of your head, contrasting the stretchy stomach lining you've grown accustomed to. In addition, the rocking motion of the stomach shifts in direction, causing you to be frequently curled up tightly against the kneading walls. The flurry of varied thoughts surge through your head before coming to the determination that Chip is pleasuring himself with you, through his own stomach."
+			]
+		},
+		{
+			"Key": "WRC_CHIP_ENDO3",
+			"Text": [
+				"The world suddenly lurches forward. Colossal arms press in on all sides. The gyrating movements strengthen in intensity. Your breath is squeezed from your lungs as the stomach grows tighter and more constrictive. You hear the wolf's pants through the stomach, gaining energy and zeal, you brace for the inevitable climax. When the fateful moment comes to pass, the environment collapses in the tightest ball it can muster. Your bones feel like being on the cusp of snapping as Chip howls proudly into the air. On your back, you feel the pulsation from his load being expelled, and while grateful that you're not presently there, you're still feeling the effects of a behemoth's intimate affection."
+			]
+		},
+		{
+			"Key": "WRC_CHIP_ENDO4",
+			"Text": [
+				"When you are finally freed from your tight squeeze, the exhaustion of enduring such torture overwhelms you. You open your eyes, realizing that you might have passed out for a moment there. The smelly environs coupled with the deep roaring of a slumbering wolf bring back the realization that you were still in Chip's stomach, and like all other times he still hasn't digested you. However, feeling you stirring about interrupts the peaceful snoring, and Chip rises back to his feet. The stomach ensnares around you once again, beginning your reverse trip back out of the stomach."
+			]
+		},
+		{
+			"Key": "WRC_CHIP_ENDO5",
+			"Text": [
+				"You lose track of where in the beast you presently are, your saturation of drool doesn't help with feeling your way through. Ambient light heralds in your release as Chip retches whilst coughing you up. You slide up from the throat with enviable ease, likely due to your generous coating of harmless slime juices, and slip right past his tongue and teeth onto the cool, wet ground. The air shoots a chill into your body, reminding you of the sharp contrast of how comparatively warm the wolf's stomach is. One look around, and you seem to be in some uncharted territory of the forest, distant from the safety of Rux's cottage."
+			]
+		},
+		{
+			"Key": "WRC_CHIP_ENDO6",
+			"Text": [
+				"You stand back up, trying in vain to swipe the slobber from your {player.fur} until a sharp yet gentle prod at the back of your neck has you freeze in place. Standing still with Chip's teeth gripping your nape, you go limp as the wolf hoists you in the air before trotting off with you again. The cold winds rush by you as Chip holds his prize proudly before him. You instinctively shiver as your wind-swept {player.fur} is dried of any lingering substance. Before too long, the cottage is seen once again; Chip appears to have brought you back home."
+			]
+		},
+		{
+			"Key": "WRC_CHIP_ENDO7",
+			"Text": [
+				"The dire wolf places you back on the ground with uncharacteristic tact. The grip on your neck is released, then followed by a strong, long lick down your profile. You turn to watch Chip trot back to his normal sleeping spot, but not before suggestively wagging his furry rump and, was that him winking at you? Regardless, you find a patch of grass to attempt to break off any leftover nast stuck to your {player.fur} but it's ultimately of no use. Only a bath could properly purge the smell of Chip guts from you. Perhaps Rux would be kind enough to offer you his own utilities, or maybe heading south back towards the clearing would lead you in the direction of being clean?"
 			]
 		},
 		{
