@@ -57,6 +57,10 @@
 							"!Type": "CommandLog",
 							"Text": "MQ04_ADEPT_INTRO01",
 							"IsRaw": false
+						},
+						{
+							"!Type": "CommandInlineSnippet",
+							"Snippet": "Storage.SetNumber (\"WRC_CHIP_CVRELEASE\", GetTimeHourTotal())"
 						}
 					]
 				},
@@ -2088,17 +2092,17 @@
 													"OperandLiteral": false
 												},
 												{
-													"!Type": "ConditionVarNumber",
-													"VariableName": "MQ04_CHIP_LAST_ATE",
-													"Operator": "NotEqual",
-													"OperandMode": "Variable",
-													"OperandText": "GETTIMEHOURTOTAL()"
-												},
-												{
 													"!Type": "ConditionVarFlag",
 													"VariableName": "WRC_RUX_FED",
 													"OperandMode": "Literal",
 													"OperandLiteral": false
+												},
+												{
+													"!Type": "ConditionVarNumber",
+													"VariableName": "MQ04_CHIP_LAST_ATE",
+													"Operator": "NotEqual",
+													"OperandMode": "Script",
+													"OperandText": "GetTimeHourTotal()"
 												}
 											]
 										},
@@ -2713,7 +2717,7 @@
 								"Key": "Chip_Endo_CVToggle",
 								"ScriptAction": {
 									"!Type": "ScriptDataInline",
-									"Script": "local fight = Combat2()\r\nlocal good_boye = Creature(\"CR_MQ04_Chip\")\r\ngood_boye.PredatorDigests = false\r\nfight:AddParticipant(Player)\r\nfight:AddParticipant(good_boye)\r\nfight:SetVored(good_boye, Player)\r\nfight:OnRoundEnd(function(round)\r\n    Log(\"WRC_CHIP_ENDO\" .. tostring(round))\r\n    AdvanceTime(1)\r\n    if round >= 3 then \r\n        AdvanceTime(3)\r\n        fight:End() \r\n        Storage.SetFlag(\"CHIP_CVFATAL\", true)\r\n    end\r\nend)\r\nfight:Begin()"
+									"Script": "local fight = Combat2()\r\nlocal good_boye = Creature(\"CR_MQ04_Chip\")\r\ngood_boye.PredatorDigests = false\r\nfight:AddParticipant(Player)\r\nfight:AddParticipant(good_boye)\r\nfight:SetVored(good_boye, Player)\r\nfight:OnRoundEnd(function(round)\r\n    Log(\"WRC_CHIP_ENDO\" .. tostring(round))\r\n    AdvanceTime(1)\r\n    if round >= 3 then \r\n        AdvanceTime(3)\r\n        fight:End() \r\n        Storage.SetNumber (\"WRC_CHIP_CVRELEASE\", GetTimeHourTotal())\r\n    end\r\nend)\r\nfight:Begin()"
 								},
 								"ScriptAppear": {
 									"!Type": "ScriptDataVisualCondition",
@@ -2965,7 +2969,7 @@
 																"Key": "Chip_R_OV3_WRC",
 																"ScriptAction": {
 																	"!Type": "ScriptDataInline",
-																	"Script": "Log(\"CHIP_OV3_WRC\")\r\nPreySense(Creature(\"CR_MQ04_Chip\"), EPreySenseType.CockVore,\r\n    Storage.GetFlag(\"CHIP_CVFATAL\") and EPreySenseType.DigestionFatal or EPreySenseType.Endo)"
+																	"Script": "Log(\"CHIP_OV3_WRC\")\r\nPreySense(Creature(\"CR_MQ04_Chip\"), EPreySenseType.CockVore,\r\n   ChipCVFatalCheck() and EPreySenseType.Endo or EPreySenseType.DigestionFatal)"
 																},
 																"Children": [
 																	{
