@@ -161,6 +161,10 @@
 																		"Tooltip": "Place your paws on the inviting-looking tongue.",
 																		"Highlight": false,
 																		"ButtonWidth": 1.0,
+																		"ScriptAction": {
+																			"!Type": "ScriptDataInline",
+																			"Script": "Storage.SetFlag(\"FOREST_DIREWOLF_WILLING\", true)"
+																		},
 																		"Children": [
 																			{
 																				"NodeType": "State",
@@ -182,7 +186,7 @@
 																		"ButtonWidth": 1.0,
 																		"ScriptAction": {
 																			"!Type": "ScriptDataInline",
-																			"Script": "Log(\"SQ02_WOLF_ENDO_RUNAWAY\")"
+																			"Script": "Log(\"SQ02_WOLF_ENDO_RUNAWAY\")\r\nStorage.SetFlag(\"FOREST_DIREWOLF_WILLING\", false)"
 																		},
 																		"Children": [
 																			{

@@ -498,7 +498,7 @@
 		{
 			"Key": "MQ04_CHIP_FEED02",
 			"Text": [
-				"Those black lips part and munch on the entirety of your lower arms, the bowl of kibble disappearing into the feral's maw. Chip swallows once, a wet gllllllrrrrk reverberating through your arms, as the whole dish, leather bowl and all, is dislodged from your care and vanishes wholesale into the creature's gullet. The suction is so strong that you even feel your paws being dragged along for a brief moment, until the wolf opens his maw once more with a happy sigh, food bowl nowhere in sight. Now you understand the peculiar choice of platter. As the subtle throat bulge vanishes into his chest, you cannot help but wonder how many unwanted guests this oversized guard dog has 'removed' from the premises over the years."
+				"Those black lips part and munch on the entirety of your lower arms, the bowl of kibble disappearing into the feral's maw. Chip swallows once, a wet gllllllrrrrk reverberating through your arms, as the whole dish, leather bowl and all, is dislodged from your care and vanishes wholesale into the creature's gullet. The suction is so strong that you even feel your paws being dragged along for a brief moment, until the wolf opens his maw once more with a happy sigh, food bowl nowhere in sight. Now you understand the peculiar choice of platter. As the subtle throat bulge vanishes into his chest, you cannot help but wonder how many unwanted guests this oversized guard dog has 'removed' from the permises over the years."
 			]
 		},
 		{
@@ -577,6 +577,42 @@
 			"Key": "MQ04_CHIP_OV06_SAFE",
 			"Text": [
 				"Your face presses into a tightly sealed sphincter with a nasty squelch. Somewhat reluctantly, the ring widens for you - not quite enough to fit comfortably, but with your thoroughly slime-coated body, gravity combined with a few peristaltic squeezes is enough to shunt you forward. Hot, sticky sludge splashes about as you settle within and conform to the organ's shape; the stomach seems more or less free of foodstuff - barring yourself - but that never stopped the pulsating walls from secreting lukewarm, thick slime that you now bathe in. The fleshy organ, meanwhile, punctuates your sloppy welcome when it begins clamping down, rippling waves of muscular pressure kneading you into a {player.furry} ball, before it bounces back again, giving you a little more space to work with - still next to nothing, of course. It seems you might be stuck in here for a little while."
+			]
+		},
+		{
+			"Key": "MQ04_WRC_INTRO01",
+			"Text": [
+				"Feeling a sort of warm familiarity with this wolf's jaws, any self-preservation instinct within you is able to be suppressed. You wrap your paws along the edges of the slick muscle, before jumping off the ground into the welcoming embrace. The slimy snare around your upper body fastens tighter on your upper body, and an errant thought passes through your skull of it possibly being crushed by the beast's raw strength. Thankfully, its grip relaxes as the tongue slides further down your torso. The gentle pinprick of the wolf's teeth poke into your lower body as those vicious jaws softly hold you in place. Suddenly, you feel the world shift forward as the oversized canine tilts his head back.\\n\\nWarm, humid breath cascades from the throat before you, a beckoning call to your next destination. Through both the tension of the wolf's tongue and lips, your arms are pinned to your side, leaving you wholly at his mercy. This far into the devourment process, you can only hope that his stomach is as amenable to you as it was before. The slimy muscle below you rolls beneath, shuttling you along further and deeper. You feel the fresh saliva on the canine's lips coarse down your legs as the last parts of your form are slowly swallowed up."
+			]
+		},
+		{
+			"Key": "MQ04_WRC_INTRO02",
+			"Text": [
+				"This deep in wolf maw, you're shielded from the outside world. So much so, you don't hear the doors swing open nor smell the spiced fragrance emanating from within. The wolf's attention is suddenly directed towards the new scents, and at the figure within the doorway now loudly sighing. \"Alright Chip, you've had your fun. Put {player.object3p} down, now.\"\\n\\nApparently there was some sort of miscommunication, as instead of being put on the ground, you are instead flung backwards towards the throat. \"Chip's\" lips seal shit around you, silencing everything from outside as a single swallow sends you down into his esophagus. You're forced to hold your breath as you're pushed down, deeper into the feral's depths once more. A sense of déjà vu reappears in your mind as you're once again deposited within the flexible sack that is his stomach. Once you finally relinquish your stored air, you find the replacement to be stale and hot while the walls pulsate and knead over every square inch of you. This seems to be a habit for you at this point, doesn't it?"
+			]
+		},
+		{
+			"Key": "MQ04_WRC_INTRO03",
+			"Text": [
+				"Suddenly, you feel the walls surrounding you suddenly contract. Your limbs are contorted into uncomfortable positions as the once pliable stomach lining suddenly grows firm. You quickly realize that you're being shunted upwards, back out the way you once came. The walls of the throat, at least you assume that's where you're heading, convulse and knead around you as they guide you along. When you finally wind up in the wolf's maw, you can hear the forced retching from him having to spit his meal up. The saliva and stomach juices help frictionlessly slide you along as the canine tips his head to deposit you into a spittle-drenched spot on the ground.\\n\\nThe change in temperature is immediate, with the chill of the air almost making you long for the warmth of Chip's stomach once more. Thankfully, this other entity is quick to provide you with a towel to assist with drying off. You accept their gift without complaint, cleaning up the most egregious leftovers from your brief dip in the wolf's pool. You shake off the drool covering your eyes in time to see a red panda positioning himself between you and the great beast, who has respectfully given you some distance after this event. "
+			]
+		},
+		{
+			"Key": "MQ04_WRC_INTROENDO1",
+			"Text": [
+				"You're glad that the stomach is still somewhat comfortable, if only for the flexibility that the flesh offers. Over the pounding heartbeat and groans in your stomach environs, you're able to make out some muffled yelling coming from outside. Chip whines deeply, the vibrations pulsating through the flesh."
+			]
+		},
+		{
+			"Key": "MQ04_WRC_INTROENDO2",
+			"Text": [
+				"You feel the center of gravity shift suddenly, and you slide down, deeper into the stomach. Your guess is that Chip has suddenly sat down forcefully, if the uncharacteristic, indignant bark is any indication. The voice outside only seems to be getting louder, and you can even detect a bit of an attitude to their words, although you cannot make out what they're saying."
+			]
+		},
+		{
+			"Key": "MQ04_WRC_INTROENDO3",
+			"Text": [
+				"The voice grows very impatient, and you can make out the word \"NOW\" shouted loudly enough to break through the wolf's hide. You feel your world tumble again as the wolf seemingly rights itself. You take care to wipe the excess amounts of goop form your face as you regain your composure within the squishy prison."
 			]
 		},
 		{

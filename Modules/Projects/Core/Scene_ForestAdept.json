@@ -267,7 +267,7 @@
 													{
 														"NodeType": "Choice",
 														"Key": "Entry_C_IntroChip02",
-														"Title": "Continue",
+														"Title": "Uh oh...",
 														"Tooltip": "Uh, wait-",
 														"Highlight": false,
 														"ButtonWidth": 1.0,
@@ -310,6 +310,101 @@
 																					{
 																						"NodeType": "Link",
 																						"LinkTarget": "Entry_C_Intro04"
+																					}
+																				]
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													},
+													{
+														"NodeType": "Choice",
+														"Key": "IntroChipWilling",
+														"Title": "Jump in.",
+														"Tooltip": "You know your place, and where you're supposed to be.",
+														"Highlight": false,
+														"ButtonWidth": 1.0,
+														"ScriptAppear": {
+															"!Type": "ScriptDataVisualCondition",
+															"Mode": "All",
+															"Operand": true,
+															"Tests": [
+																{
+																	"!Type": "ConditionVarFlag",
+																	"VariableName": "FOREST_DIREWOLF_WILLING",
+																	"OperandMode": "Literal",
+																	"OperandLiteral": true
+																}
+															]
+														},
+														"Children": [
+															{
+																"NodeType": "State",
+																"Key": "IntroChipWillingR1",
+																"ScriptAction": {
+																	"!Type": "ScriptDataVisualAction",
+																	"Nodes": [
+																		{
+																			"!Type": "CommandLog",
+																			"Text": "MQ04_WRC_INTRO01",
+																			"IsRaw": false
+																		}
+																	]
+																},
+																"Children": [
+																	{
+																		"NodeType": "Choice",
+																		"Key": "IntroChipWillingC2",
+																		"Highlight": false,
+																		"ButtonWidth": 1.0,
+																		"Children": [
+																			{
+																				"NodeType": "State",
+																				"Key": "IntroChipWillingR2",
+																				"ScriptAction": {
+																					"!Type": "ScriptDataVisualAction",
+																					"Nodes": [
+																						{
+																							"!Type": "CommandLog",
+																							"Text": "MQ04_WRC_INTRO02",
+																							"IsRaw": false
+																						}
+																					]
+																				},
+																				"Children": [
+																					{
+																						"NodeType": "Choice",
+																						"Key": "IntroChipWillingC3",
+																						"Highlight": false,
+																						"ButtonWidth": 1.0,
+																						"ScriptAction": {
+																							"!Type": "ScriptDataInline",
+																							"Script": "local fight = Combat2()\r\nlocal goodest_boye = Creature(\"CR_MQ04_Chip\")\r\ngoodest_boye.PredatorDigests = false\r\nfight:AddParticipant(Player)\r\nfight:AddParticipant(goodest_boye)\r\nfight:SetVored(goodest_boye, Player)\r\nfight:OnRoundEnd(function(round)\r\n    Log(\"MQ04_WRC_INTROENDO\" .. tostring(round))\r\n    if round >= 3 then fight:End() end\r\nend)\r\nfight:Begin()"
+																						},
+																						"Children": [
+																							{
+																								"NodeType": "State",
+																								"Key": "IntroChipWillingR3",
+																								"ScriptAction": {
+																									"!Type": "ScriptDataVisualAction",
+																									"Nodes": [
+																										{
+																											"!Type": "CommandLog",
+																											"Text": "MQ04_WRC_INTRO03",
+																											"IsRaw": false
+																										}
+																									]
+																								},
+																								"Children": [
+																									{
+																										"NodeType": "Link",
+																										"LinkTarget": "Entry_C_Intro04"
+																									}
+																								]
+																							}
+																						]
 																					}
 																				]
 																			}
