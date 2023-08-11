@@ -2163,6 +2163,40 @@
 												"LinkTarget": "Talk_R_Rux_Root"
 											}
 										]
+									},
+									{
+										"NodeType": "Choice",
+										"Key": "Talk_C_Rux_Feed",
+										"Title": "Feed Chip",
+										"Tooltip": "Ask if Chip has had enough to eat.",
+										"Highlight": false,
+										"ButtonWidth": 1.0,
+										"ScriptAction": {
+											"!Type": "ScriptDataVisualAction",
+											"Nodes": [
+												{
+													"!Type": "CommandLog",
+													"Text": "Rux gives Chip's Food. Yay!",
+													"IsRaw": true
+												},
+												{
+													"!Type": "CommandPlayerSetItem",
+													"ItemGuid": "329ace8e-2f87-4769-b9a3-ce0d07724495",
+													"Add": true,
+													"Quiet": false
+												}
+											]
+										},
+										"ScriptAppear": {
+											"!Type": "ScriptDataInline",
+											"Script": "return IsChipFeedable() and not Player:HasItem(\"I_MQ04_Chip_Food\")"
+										},
+										"Children": [
+											{
+												"NodeType": "Link",
+												"LinkTarget": "Talk_R_Rux_Root"
+											}
+										]
 									}
 								]
 							}
@@ -3003,6 +3037,47 @@
 									{
 										"NodeType": "Link",
 										"LinkTarget": "Chip_C_Leave"
+									}
+								]
+							}
+						]
+					},
+					{
+						"NodeType": "Choice",
+						"Key": "Chip_Feed",
+						"Title": "Feeding Time!",
+						"Tooltip": "Such a big boy needs to eat!",
+						"Highlight": false,
+						"ButtonWidth": 1.0,
+						"ScriptAppear": {
+							"!Type": "ScriptDataVisualCondition",
+							"Mode": "All",
+							"Operand": true,
+							"Tests": [
+								{
+									"!Type": "ConditionPlayerHasItem",
+									"ItemGuid": "329ace8e-2f87-4769-b9a3-ce0d07724495"
+								}
+							]
+						},
+						"Children": [
+							{
+								"NodeType": "State",
+								"Key": "ChipFeed1",
+								"ScriptAction": {
+									"!Type": "ScriptDataVisualAction",
+									"Nodes": [
+										{
+											"!Type": "CommandLog",
+											"Text": "You give Chip the bowl. Yummy!",
+											"IsRaw": true
+										}
+									]
+								},
+								"Children": [
+									{
+										"NodeType": "Link",
+										"LinkTarget": "MQ04_C_Chip_Feed2"
 									}
 								]
 							}

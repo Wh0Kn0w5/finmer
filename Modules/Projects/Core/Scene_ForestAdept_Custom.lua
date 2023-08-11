@@ -3,6 +3,9 @@
 local function IsChipVoreFatal()
     return Storage.GetNumber("MQ04_CHIP_LAST_ATE") == GetTimeHourTotal()
 end
+local function IsChipFeedable()
+    return Storage.GetNumber("MQ04_CHIP_LAST_ATE") <= GetTimeHourTotal()+8
+end
 
 -- Shop stock
 local potions = {
