@@ -350,6 +350,13 @@
 																			"!Type": "CommandLog",
 																			"Text": "MQ04_WRC_INTRO01",
 																			"IsRaw": false
+																		},
+																		{
+																			"!Type": "CommandVarSetNumber",
+																			"VariableName": "CHIPOV",
+																			"ValueOperation": "Add",
+																			"OperandMode": "Literal",
+																			"OperandLiteral": 1.0
 																		}
 																	]
 																},
@@ -2176,8 +2183,8 @@
 											"Nodes": [
 												{
 													"!Type": "CommandLog",
-													"Text": "Rux gives Chip's Food. Yay!",
-													"IsRaw": true
+													"Text": "MQ04_WRC_FEED",
+													"IsRaw": false
 												},
 												{
 													"!Type": "CommandPlayerSetItem",
@@ -2903,6 +2910,10 @@
 															"!Type": "CommandLog",
 															"Text": "MQ04_CHIP_OV02",
 															"IsRaw": false
+														},
+														{
+															"!Type": "CommandComment",
+															"Comment": "Need check for as many times swallowed. If greater than 3 times, will engage in first alt with OV."
 														}
 													]
 												},
@@ -3069,8 +3080,13 @@
 									"Nodes": [
 										{
 											"!Type": "CommandLog",
-											"Text": "You give Chip the bowl. Yummy!",
-											"IsRaw": true
+											"Text": "WRC_CHIP_FEED01",
+											"IsRaw": false
+										},
+										{
+											"!Type": "CommandPlayerSetItem",
+											"ItemGuid": "329ace8e-2f87-4769-b9a3-ce0d07724495",
+											"Add": false
 										}
 									]
 								},

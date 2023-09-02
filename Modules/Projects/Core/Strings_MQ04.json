@@ -580,6 +580,12 @@
 			]
 		},
 		{
+			"Key": "MQ04_WRC_FEED",
+			"Text": [
+				"\"Are you concerned about my guard wolf?\" Rux cocks an eyebrow alongside a knowing smirk. \"Well, I suppose it has been an appreciable while since Chip has eaten anything, and we don't want him to get surly on us. Wait for but a moment, {player.name} and I shall return.\" In under a minutes time, the red panda reemerges from the kitchen, carrying the same leather bowl of kibble. Though, is that a new stain on the leather?\\n\\n\"Do take care with Chip's enthusiasm, dear {player.species}. As loyal as the wolf is, he has a difficult time controlling himself, and should you wind up alongside his meal, I need not detail what fate would await you.\""
+			]
+		},
+		{
 			"Key": "MQ04_WRC_INTRO01",
 			"Text": [
 				"Feeling a sort of warm familiarity with this wolf's jaws, any self-preservation instinct within you is able to be suppressed. You wrap your paws along the edges of the slick muscle, before jumping off the ground into the welcoming embrace. The slimy snare around your upper body fastens tighter on your upper body, and an errant thought passes through your skull of it possibly being crushed by the beast's raw strength. Thankfully, its grip relaxes as the tongue slides further down your torso. The gentle pinprick of the wolf's teeth poke into your lower body as those vicious jaws softly hold you in place. Suddenly, you feel the world shift forward as the oversized canine tilts his head back.\\n\\nWarm, humid breath cascades from the throat before you, a beckoning call to your next destination. Through both the tension of the wolf's tongue and lips, your arms are pinned to your side, leaving you wholly at his mercy. This far into the devourment process, you can only hope that his stomach is as amenable to you as it was before. The slimy muscle below you rolls beneath, shuttling you along further and deeper. You feel the fresh saliva on the canine's lips coarse down your legs as the last parts of your form are slowly swallowed up."
@@ -619,6 +625,12 @@
 			"Key": "TIP_MQ04_TALK_OPTIONAL",
 			"Text": [
 				"< Tip: You can also ask these questions later, if you prefer. >"
+			]
+		},
+		{
+			"Key": "WRC_CHIP_FEED01",
+			"Text": [
+				"Before you even get your paw in your satchel, Chip perks his head up. Gusts of air flow through his colossal nostrils as the whiff of your meager offering graces the wind. Once your prize is revealed however, the wolf bounds to his feet with a speed and dexterity unexpected from his massive frame. Still, in an effort to avoid unwarranted teasing of such a large beast, you humbly present your offering to the eager canine."
 			]
 		}
 	]
