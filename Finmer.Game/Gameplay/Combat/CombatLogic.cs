@@ -294,6 +294,51 @@ namespace Finmer.Gameplay.Combat
         {
             // Show text describing the action. Special handling for the player to use some POV messages instead.
             CombatDisplay.ShowSimpleMessage(prey.IsPlayer() ? @"vore_pov_struggle" : @"vore_ext_struggle", predator, prey);
+            if (prey.IsPlayer()) 
+            {
+                POVPreyProcess(predator, prey);
+            }
+        }
+
+        /// <summary>
+        /// Have the predator work over a player prey.
+        /// </summary>
+        public static void POVPreyProcess(Participant predator, Participant prey)
+        {
+            // Show text describing the action. Special handling for endo situations.
+            CombatDisplay.ShowSimpleMessage(predator.Character.PredatorDigests ? @"vore_pov_digest" : @"vore_pov_endo", predator, prey);
+        }
+
+        /// <summary>
+        /// Perform a Massage action.
+        /// </summary>
+        public static void PerformPreyMassage(Participant predator, Participant prey)
+        {
+            // Show text describing the action. Special handling for the player to use some POV messages instead.
+            if (predator.Character.PredatorDigests)
+            {
+                if (prey.IsPlayer())
+                {
+                    CombatDisplay.ShowSimpleMessage(@"vore_pov_massage", predator, prey);
+                }
+                else
+                {
+                    CombatDisplay.ShowSimpleMessage(@"vore_ext_massage", predator, prey);
+                }
+            }
+            else 
+            {
+                if (prey.IsPlayer())
+                {
+                    CombatDisplay.ShowSimpleMessage(@"vore_pov_endo_massage", predator, prey);
+                }
+                else
+                {
+                    CombatDisplay.ShowSimpleMessage(@"vore_ext_endo_massage", predator, prey);
+                }
+            }
+        
+                
         }
 
         /// <summary>

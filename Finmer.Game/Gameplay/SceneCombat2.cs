@@ -527,8 +527,12 @@ namespace Finmer.Gameplay
                 case ECombatAction.Prey_Struggle:
                     CombatLogic.PerformPreyStruggle(instigator.Predator, instigator);
                     break;
+                case ECombatAction.Prey_Massage:
+                    CombatLogic.PerformPreyMassage(instigator.Predator, instigator);
+                    break;
                 case ECombatAction.Prey_Submit:
                     // No action
+                    CombatLogic.POVPreyProcess(instigator.Predator, instigator);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(action));
@@ -669,6 +673,12 @@ namespace Finmer.Gameplay
                 Label = "Submit",
                 Tooltip = "Relax in your slimy embrace."
             });
+            ui.AddButton(new ChoiceButtonModel
+            {
+                Choice = (int)ECombatAction.Prey_Massage,
+                Label = "Massage",
+                Tooltip = "Attempt to appease your predator, from inside."
+            });
 
             // Inventory items
             m_PotentialPlayerItems = GetUsableItems().ToList();
@@ -764,7 +774,8 @@ namespace Finmer.Gameplay
             Item,
             Swallow,
             Prey_Struggle,
-            Prey_Submit
+            Prey_Submit,
+            Prey_Massage
         }
 
         private readonly struct CombatAction
