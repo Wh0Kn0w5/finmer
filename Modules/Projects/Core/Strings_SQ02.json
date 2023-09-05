@@ -94,9 +94,25 @@
 			]
 		},
 		{
+			"Key": "SQ02_WOLF_DIGEST_MASSAGE",
+			"Text": [
+				"Seeking to not displease your predator further, you rub alongside the wolf's guts with what remaining strength you have. It seems to be pleasing the canine, at any rate.",
+				"You knead and slosh through the dire wolf's innards, seeking to provide pleasure with your dwindling energy. The content grunt from outside is a clear indicator that you seem to be doing a good job.",
+				"You gently caress the wolf's stomach walls, where the acidic slime soaks deep into your {player.fur}, burning slightly."
+			]
+		},
+		{
 			"Key": "SQ02_WOLF_ENDO_BEGIN",
 			"Text": [
 				"A few minutes have passed now, and all around you is the persistent and inevitable force of stomach walls, soft but unyielding in their strength, kneading away at you and rubbing warm slime into your {player.fur}. The air is breathable, if rather hot, shallow, and reeking of meat. Oddly enough, however, you don't actually feel like you're being digested."
+			]
+		},
+		{
+			"Key": "SQ02_WOLF_ENDO_MASSAGE",
+			"Text": [
+				"In spite of the cramped conditions, you do what you can to please the wolf belly from inside. Seems it still hasn't grown caustic with you in here, yet.",
+				"You try to please the wolf, keeping it satisfied enough to stave off digestion for as long as you can muster. Thankfully the content whine reverberating around you shows you seem to be pleasing it just fine.",
+				"You press into the wet, squishy stomach, and a fair bit of stomach juices soak into your {player.fur}. Gross!"
 			]
 		},
 		{

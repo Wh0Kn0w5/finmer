@@ -31,6 +31,16 @@
 			"Key": "VORE_DISPOSAL",
 			"Rule": "NpcToPlayer",
 			"NewKey": "SQ02_WOLF_VORE_DISPOSAL"
+		},
+		{
+			"Key": "VORE_POV_MASSAGE",
+			"Rule": "NpcToPlayer",
+			"NewKey": "MQ04_CHIP_DIGEST_MASSAGE"
+		},
+		{
+			"Key": "VORE_POV_ENDO_MASSAGE",
+			"Rule": "NpcToPlayer",
+			"NewKey": "MQ04_CHIP_ENDO_MASSAGE"
 		}
 	]
 }

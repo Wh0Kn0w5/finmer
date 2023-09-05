@@ -337,8 +337,11 @@ namespace Finmer.Gameplay.Combat
                     CombatDisplay.ShowSimpleMessage(@"vore_ext_endo_massage", predator, prey);
                 }
             }
-        
-                
+
+            if (prey.IsPlayer())
+            {
+                POVPreyProcess(predator, prey);
+            }
         }
 
         /// <summary>

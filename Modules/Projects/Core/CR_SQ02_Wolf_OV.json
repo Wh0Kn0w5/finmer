@@ -51,6 +51,16 @@
 			"Key": "KILL_GENERIC",
 			"Rule": "PlayerToNpc",
 			"NewKey": "SQ02_WOLF_KILL_GENERIC"
+		},
+		{
+			"Key": "VORE_POV_MASSAGE",
+			"Rule": "NpcToPlayer",
+			"NewKey": "SQ02_WOLF_DIGEST_MASSAGE"
+		},
+		{
+			"Key": "VORE_POV_ENDO_MASSAGE",
+			"Rule": "NpcToPlayer",
+			"NewKey": "SQ02_WOLF_ENDO_MASSAGE"
 		}
 	]
 }

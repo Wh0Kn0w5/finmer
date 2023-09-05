@@ -460,6 +460,22 @@
 			]
 		},
 		{
+			"Key": "MQ04_CHIP_DIGEST_MASSAGE",
+			"Text": [
+				"Learning to accept your fate, you shift through the food slurry to massage along the walls of Chip's stomach. A final belly rub for the good guard dog.",
+				"As the acrid air burns your lungs, you choose to spend your last few bits of air by kneading alongside the walls of Chip's belly. He grunts happily at your efforts, probably would thank you if he could.",
+				"You coax your paws alongside the inner bounds of this belly prison. Your touch results in a new secretion of caustic slime, burning right through your {player.fur}. Chip seems appreciative of the gesture from his most recent meal."
+			]
+		},
+		{
+			"Key": "MQ04_CHIP_ENDO_MASSAGE",
+			"Text": [
+				"You poke, prod and slide across Chip's belly walls. He's been good at keeping you unharmed for now, and you deeply hope that he'll continue the trend.",
+				"You push long and deep into Chip's stomach. The wolf groans and grunts in appreciation, not every day he gets belly rubs from the inside, as opposed to the outside.",
+				"Your efforts to please Chip seem successful, if the long, deep moan is anything to go by. The wolf shakes in place, jostling you around."
+			]
+		},
+		{
 			"Key": "MQ04_CHIP_ENDO1",
 			"Text": [
 				"The organ is comfortable to sit in only because of the soft, velvety texture of the spongy walls surrounding you. Not at all unlike a hammock, you are suspended in its tight, sweltering embrace. As the fleshy chamber begins gently churning its contents, the center of gravity shifts with Chip changing position."

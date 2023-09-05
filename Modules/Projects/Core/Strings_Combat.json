@@ -138,6 +138,18 @@
 			]
 		},
 		{
+			"Key": "VORE_EXT_ENDO_MASSAGE",
+			"Text": [
+				"{prey} softly {prey massage} {predator.aliaspossessive} stomach lining, harboring full trust that {predator.object} will keep {prey.object} safe."
+			]
+		},
+		{
+			"Key": "VORE_EXT_MASSAGE",
+			"Text": [
+				"{prey} {prey knead} against {prey.possessive} predator's stomach, seemingly paying little heed to the oppressive environs that are breaking {prey.object} down."
+			]
+		},
+		{
 			"Key": "VORE_EXT_STRUGGLE",
 			"Text": [
 				"{prey} {prey squirm} around helplessly in {prey.possessive} oppressive environment, splashing slime and juices all over {prey.object}self.",
@@ -193,6 +205,18 @@
 				"You hear wet squelches and glorps around you as the stomach shifts.",
 				"The stomach walls knead and churn around you.",
 				"You wince as the muscles grind against you."
+			]
+		},
+		{
+			"Key": "VORE_POV_ENDO_MASSAGE",
+			"Text": [
+				"You gently press your paws against the sides of {predator.aliaspossessive} stomach. It secretes some thick albeit harmless fluid, thoroughly coating your {player.fur}."
+			]
+		},
+		{
+			"Key": "VORE_POV_MASSAGE",
+			"Text": [
+				"You softly press against your predator's stomach, softly kneading at the walls while they secrete their caustic emissions all over your {player.fur}."
 			]
 		},
 		{
